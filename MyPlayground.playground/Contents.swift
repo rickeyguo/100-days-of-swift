@@ -82,3 +82,51 @@ enum Planet: Int {
 }
 
 let earth = Planet(rawValue: 3)
+
+let firstScore = 12
+let secondScore = 4
+
+let total = firstScore + secondScore
+let difference = firstScore - secondScore
+let product = firstScore * secondScore
+let divided = firstScore / secondScore
+
+let remainder = 13 % secondScore
+
+let firstHalf = ["John", "Paul"]
+let secondHalf = ["George", "Ringo"]
+let joinedArray = firstHalf + secondHalf
+
+var quote = "The rain in Spain falls mainly on the "
+quote += "Spaniards"
+
+"Taylor" <= "Swift"
+
+let firstCard = 11
+let secondCard = 10
+print(firstCard == secondCard ? "Cards are the same" : "Cards are different")
+
+
+let weather = "rain"
+switch weather {
+case "rain":
+    print("Bring an umbrella")
+case "snow":
+    print("Wrap up warm")
+case "sunny":
+    print("Wear sunscreen")
+    fallthrough
+default:
+    print("Enjoy your day!")
+}
+
+let scoreNum = 84
+
+switch scoreNum {
+case 0..<50:
+    print("You failed badly.")
+case 50..<85:
+    print("You did OK.")
+default:
+    print("You did great!")
+}
