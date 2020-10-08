@@ -130,3 +130,41 @@ case 50..<85:
 default:
     print("You did great!")
 }
+
+let count = 1...10
+
+for number in count {
+    print("Number is \(number)")
+}
+
+print("Players gonna ")
+
+for _ in 1...5 {
+    print("play")
+}
+
+var count1 = 1
+
+while count1 <= 20 {
+    print(count1)
+    count1 += 1
+}
+
+
+
+print("Ready or not, here I come!")
+
+repeat {
+    print("This is false")
+} while false
+
+var counter = 0
+
+while true {
+    print("here")
+    counter += 1
+
+    if counter == 23 {
+        break
+    }
+}
