@@ -204,3 +204,16 @@ func square(numbers: Int...) {
     }
 }
 square(numbers: 1, 2, 3, 4, 5)
+
+let driving = { (place: String) in
+    print("I'm going to \(place) in my car")
+}
+
+driving("London")
+
+let drivingWithReturn = { (place: String) -> String in
+    return "I'm going to \(place) in my car"
+}
+
+let message : String = drivingWithReturn("London")
+print(message)
