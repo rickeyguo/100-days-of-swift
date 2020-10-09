@@ -168,3 +168,39 @@ while true {
         break
     }
 }
+
+func printHelp() {
+    let message = """
+Welcome to MyApp!
+
+Run this app inside a directory of images and
+MyApp will resize them all into thumbnails
+"""
+
+    print(message)
+}
+
+printHelp()
+
+func sayHello(to name: String) {
+    print("Hello, \(name)!")
+}
+sayHello(to: "Taylor")
+
+func greet(_ person: String, nicely: Bool = true) {
+    if nicely == true {
+        print("Hello, \(person)!")
+    } else {
+        print("Oh no, it's \(person) again...")
+    }
+}
+
+greet("Taylor")
+greet("Taylor", nicely: false)
+
+func square(numbers: Int...) {
+    for number in numbers {
+        print("\(number) squared is \(number * number)")
+    }
+}
+square(numbers: 1, 2, 3, 4, 5)
