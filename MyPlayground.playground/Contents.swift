@@ -212,6 +212,7 @@ func travel(action: (String) -> Void) {
 }
 
 travel { (place: String) in
+let driving = { (place: String) in
     print("I'm going to \(place) in my car")
 }
 
