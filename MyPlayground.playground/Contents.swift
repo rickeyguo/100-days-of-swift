@@ -204,3 +204,40 @@ func square(numbers: Int...) {
     }
 }
 square(numbers: 1, 2, 3, 4, 5)
+
+func travel(action: (String) -> Void) {
+    print("I'm getting ready to go.")
+    action("London")
+    print("I arrived!")
+}
+
+travel { (place: String) in
+    print("I'm going to \(place) in my car")
+}
+
+struct Sport {
+    var name: String
+}
+
+var tennis = Sport(name: "Tennis")
+print(tennis.name)
+
+struct Person {
+    var name: String
+
+    mutating func makeAnonymous() {
+        name = "Anonymous"
+    }
+}
+
+var person = Person(name: "Ed")
+person.makeAnonymous()
+print(person.name)
+
+let testString = "Do or do not, there is no try."
+
+print(testString)
+print(testString.count)
+print(testString.hasPrefix("there"))
+print(testString.uppercased())
+print(testString.sorted())
