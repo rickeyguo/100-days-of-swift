@@ -211,16 +211,11 @@ func travel(action: (String) -> Void) {
     print("I arrived!")
 }
 
-travel { (place: String) in
-let driving = { (place: String) in
-    print("I'm going to \(place) in my car")
-}
-
 struct Sport {
     var name: String
 }
 
-var tennis = Sport(name: "Tennis")
+let tennis = Sport(name: "Tennis")
 print(tennis.name)
 
 struct Person {
@@ -242,3 +237,17 @@ print(testString.count)
 print(testString.hasPrefix("there"))
 print(testString.uppercased())
 print(testString.sorted())
+
+struct User {
+    var username: String
+
+    init() {
+        username = "Anonymous"
+        print("Creating a new user!")
+    }
+}
+
+var user = User()
+print(user.username)
+user.username = "twostraws"
+print(user.username)
