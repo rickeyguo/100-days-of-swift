@@ -251,3 +251,16 @@ var user = User()
 print(user.username)
 user.username = "twostraws"
 print(user.username)
+
+
+class Dog {
+    var name: String
+    var breed: String
+
+    init(name: String, breed: String) {
+        self.name = name
+        self.breed = breed
+    }
+}
+
+let poppy = Dog(name: "Poppy", breed: "Poodle")
