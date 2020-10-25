@@ -16,35 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUH-Su-4l5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxN-TY-Dbf">
                                 <rect key="frame" x="107" y="100" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OnU-Y2-KeS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGE-Da-GI8">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4j3-8g-c1k">
                                 <rect key="frame" x="107" y="230" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W1l-u7-3Bg"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVg-9q-dny">
-                                <rect key="frame" x="107" y="360" width="200" height="100"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00L-4e-8LU">
+                                <rect key="frame" x="107" y="359" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qsQ-mz-N6V"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="AVg-9q-dny" firstAttribute="centerX" secondItem="RGE-Da-GI8" secondAttribute="centerX" id="4Y4-z3-6CR"/>
-                            <constraint firstItem="mUH-Su-4l5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="92S-1J-2lF"/>
-                            <constraint firstItem="mUH-Su-4l5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BAC-fO-OmE"/>
-                            <constraint firstItem="RGE-Da-GI8" firstAttribute="centerX" secondItem="mUH-Su-4l5" secondAttribute="centerX" id="TuA-A5-GAH"/>
-                            <constraint firstItem="RGE-Da-GI8" firstAttribute="top" secondItem="mUH-Su-4l5" secondAttribute="bottom" constant="30" id="TzY-Gs-y9F"/>
-                            <constraint firstItem="AVg-9q-dny" firstAttribute="top" secondItem="RGE-Da-GI8" secondAttribute="bottom" constant="30" id="swx-yz-Qwf"/>
+                            <constraint firstItem="ZxN-TY-Dbf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fxt-ku-G00"/>
+                            <constraint firstItem="4j3-8g-c1k" firstAttribute="centerX" secondItem="ZxN-TY-Dbf" secondAttribute="centerX" id="VCY-GL-eXv"/>
+                            <constraint firstItem="ZxN-TY-Dbf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="cJU-Nj-UBx"/>
+                            <constraint firstItem="00L-4e-8LU" firstAttribute="centerX" secondItem="4j3-8g-c1k" secondAttribute="centerX" id="f5I-pj-TDG"/>
+                            <constraint firstItem="00L-4e-8LU" firstAttribute="top" secondItem="4j3-8g-c1k" secondAttribute="bottom" constant="29" id="lnE-59-AoI"/>
+                            <constraint firstItem="4j3-8g-c1k" firstAttribute="top" secondItem="ZxN-TY-Dbf" secondAttribute="bottom" constant="30" id="pJp-eF-HzV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yyE-YD-fed"/>
                     <connections>
-                        <outlet property="button1" destination="AVg-9q-dny" id="TC8-sw-8Aw"/>
-                        <outlet property="button2" destination="RGE-Da-GI8" id="nfh-RY-sVe"/>
-                        <outlet property="button3" destination="AVg-9q-dny" id="04Q-4b-Llm"/>
+                        <outlet property="button1" destination="ZxN-TY-Dbf" id="mw7-6W-Wjj"/>
+                        <outlet property="button2" destination="4j3-8g-c1k" id="eec-5e-zz4"/>
+                        <outlet property="button3" destination="00L-4e-8LU" id="hfd-ze-WF0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
